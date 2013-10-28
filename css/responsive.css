@@ -1,0 +1,51 @@
+
+@media (max-width: 960px) {
+	body{
+		width: 650px;
+	}
+	
+	#me{
+		width: 633px;
+	}
+	
+	nav{
+		margin-left: -335px;
+		width: 663px;
+	}
+	
+	.navback{
+		width: 957px;
+		left: 50%;
+		margin-left: -481px;
+	}
+	
+	#pic > img{
+		width: 310px !important;
+	}
+	.div{
+		//width: 270px !important;
+	}
+	
+	#pic > div{
+		height: auto !important;
+	}
+}
+
+@media (max-width: 640px) {
+	body{
+		width: 320px;
+	}
+	
+	#me{
+		width: 310px;
+	}
+	
+	nav{
+		width: 340px;
+		margin-left: -170px;
+	}
+
+	#pic > div{
+		margin-left : 0 !important;
+	}
+}

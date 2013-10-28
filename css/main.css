@@ -1,0 +1,328 @@
+body{
+	background-color: #E5E5E5;
+	font-family: 'roboto', arial;
+	width: 970px;
+	margin: 0 auto;
+	padding-top: 39px;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+
+.div{
+	background-color: white;
+	box-shadow: 0 1px 1px #aaa;
+	width: 290px;
+	width: 310px;
+	padding: 10px;
+	margin: 5px;
+	vertical-align: top;
+	display: inline-block;
+}
+
+.mycontainer{
+	position: relative;
+	z-index: 2;
+}
+
+
+
+#div2{
+	display: inline-block;
+	width: 310px;
+	margin: 5px;
+	vertical-align: top;
+}
+
+#div3{
+	display: inline-block;
+	width: 320px;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+}
+
+#social{
+	width: 100%;
+	display: inline-block;
+//	height: 64px;
+	padding: 10px 0;
+	margin: 0;
+	
+
+}
+
+#twitter-div{
+	padding: 0 5px;
+}
+
+.twitter-timeline {
+	border: none;
+	max-width: 100%;
+	min-width: 180px;
+	width: 310px;
+	margin: 0;
+	background: white;
+	//box-shadow: 0 1px 1px #aaa;	
+}
+
+#map{
+	width: 310px;
+	padding: 5px;
+	margin: 5px 0 0 0;
+	display: inline-block;
+}
+
+#map img{
+	width: 100%;
+}
+
+#map-medina{
+	width: 100%;
+height: 130px;
+}
+
+.maplink{
+	background: white;
+	display: block;
+	padding: 10px;
+}
+
+#map-canvas {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 170px;
+}
+
+#social{
+	text-align: center;
+}
+
+#social > a{
+	display: inline-block;
+	height: 64px;
+	width: 64px;
+	text-align: center;
+	background: #fff;
+	line-height: 64px;
+	font-size: 48px;
+	margin-bottom: 0;
+	text-decoration: none;
+	transition: .3s;
+	color: #0088cc;
+	border-radius: 96px;
+}
+
+#social > a:hover{
+	background: #ccc;
+	color: #0088cc;
+}
+
+#social > a i{
+	
+	text-shadow: 0 3px 1px #000;
+	transition: .3s; 
+}
+
+#social > a:hover i{
+	text-shadow: 0 0 0 white;
+	
+	text-shadow: 0 10px 3px #000;
+}
+
+#social > a:active{
+	background: #aaa;
+}
+
+#social > a:active{
+	-webkit-transform: scale(0.95);
+}
+
+#social > a.twitter{
+	background: #5BC8ED;
+	color: white;
+}
+
+#social > a.gplus{
+	background: #C84F3A;
+	color: white;
+}
+
+#social > a.github{
+	background: #aaa;
+	color: white;
+}
+
+
+
+
+
+
+#coffee{
+	border: 3px solid #71DBEE;
+	border-radius: 50px;
+	padding: 5px;
+	color: #f89406;
+	font-size: 24px;
+}
+      
+#donate{
+	width: 310px;
+	background: white;
+	padding: 0;
+}
+
+#donate img{
+	width: 100%;
+}
+
+#donate p{
+	margin: 0;
+}
+
+#donate p, #donate button, #donate h4{
+	padding: 5px 10px;
+}
+
+#donate label{
+	display: inline-block;
+}
+
+#donate select{
+	display: inline-block;
+	width: auto;
+	text-align: right;
+	//-webkit-appearance:none;
+	//line-height: 1em;
+}
+
+/*#donate select::after {
+        content: "\f107";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        color: black;
+        
+        pointer-events:none;
+        
+        -webkit-border-radius: 0 6px 6px 0;
+        -moz-border-radius: 0 6px 6px 0;
+        border-radius: 0 6px 6px 0;
+        
+        font-family: FontAwesome;
+font-weight: normal;
+font-style: normal;
+text-decoration: inherit;
+-webkit-font-smoothing: antialiased;
+    }*/
+
+#donate select option{
+	text-align: right;
+}
+
+#donatenow{
+	display: block;
+	width: 93%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+input.quantity{
+	width: 36px;
+	display: inline-block;
+	text-align: right;
+	border-radius: 0;
+}
+
+.item{
+	text-align: right;
+}
+
+#labelTotal{
+	width: 80px;
+	display: inline-block;
+}
+
+#total{
+	box-shadow: 0px -3px 5px #ddd;
+}
+
+.coffeeResult, #coffeeTotal, #labelTotal, #donate label{
+	font-size: 24px;
+	font-weight: 300;
+}
+
+#coffeeTotal{
+	
+	font-weight: 400;
+}
+
+#weteo{
+	height: 510px;
+	width: 310px;
+}
+
+#pic img{
+	display: inline-block;
+	width: 635px;
+}
+
+#pic{
+	margin: 5px;
+}
+
+#pic > div{
+	display: inline-block;
+	width: 290px;
+	width: 310px;
+	height: 363px;
+	height: 383px;
+	vertical-align: top;
+	margin-left: 8px;
+	background-color: white;
+	box-shadow: 0 1px 1px #aaa;
+	padding: 10px;
+}
+
+footer > *{
+	vertical-align: bottom !important;
+}
+
+
+
+
+
+.modal.fade {	
+	top: 5% !important;
+	-webkit-transform: scale(0.5);
+	   -moz-transform: scale(0.5);
+	        transform: scale(0.5);
+	        
+	-webkit-transition: .2s ease-out;
+	   -moz-transition: .2s ease-out;
+	        transition: .2s ease-out;	
+
+	
+	margin-top: 0;
+}
+
+.modal.fade.in {
+	-webkit-transform: scale(1);
+	   -moz-transform: scale(1);
+	        transform: scale(1);
+	        
+	-webkit-transition: .3s ease-out;
+	   -moz-transition: .3s ease-out;
+	        transition: .3s ease-out;
+}
+
+.modal-backdrop, .modal-backdrop.fade.in {
+	opacity: .1;
+	filter: alpha(opacity=10);
+}
+

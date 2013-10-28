@@ -1,0 +1,28 @@
+
+.animationFunc (@arguments) {
+  -webkit-animation: @arguments;
+  -moz-animation: @arguments;
+  -ms-animation: @arguments;
+  -o-animation: @arguments;
+  animation: @arguments;
+}
+
+
+#skills.showAnimation .skills{
+  .animationFunc(skills-animation 3s 1);
+}
+
+@-webkit-keyframes skills-animation {.skills-frames;}
+@-moz-keyframes skills-animation {.skills-frames;}
+@-ms-keyframes skills-animation {.skills-frames;}
+@-o-keyframes skills-animation {.skills-frames;}
+@keyframes skills-animation {.skills-frames;}
+
+.skills-frames () {
+  0% {
+    background-size: 0%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}

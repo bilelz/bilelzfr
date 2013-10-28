@@ -1,0 +1,95 @@
+{
+	"version": "1.1",
+	"resume": {
+		"person": {
+			"name": "Z.",
+			"firstname": "Bilel",
+			"title": "Responsive developer",
+			"email": "me@bilelz.fr"
+		},
+		"skills": [
+			{
+				"name": "Java EE",
+				"level": "experienced"
+			}, {
+				"name": "JavaScript",
+				"level": "expert"
+			}, {
+				"name": "HTML/CSS",
+				"level": "expert"
+			}, {
+				"name": "Webservices",
+				"level": "experienced"
+			}, {
+				"name": "SQL/Hibernate",
+				"level": "experienced"
+			}
+		],
+		"education": [
+			{
+				"date": "2006",
+				"title": "Master 2 Internet, Réseaux & Multimédia",
+				"url": "http://www-galilee.univ-paris13.fr/etu_masters1_image_reseaux.htm",
+				"school" : "Université Paris XIII"
+				
+			}, {
+				"date": "2004",
+				"title": "Licence Ingénierie Electrique",
+				"url": "http://www-galilee.univ-paris13.fr/etu_licences_spi.htm",
+				"school" : "Université Paris XIII"
+			}, {
+				"date": "2003",
+				"title": "DEUG STPI (Sciences et Techniques Pour l'Ingénieur)",
+				"url": "http://www-galilee.univ-paris13.fr/etu_licences_spi.htm",
+				"school" : "Université Paris XIII"
+			}
+		],
+		"experience": [
+			{
+				"date": "2013",
+				"company": "HTML5 partner",
+				"url": "http://www.html5rocks.com",
+				"description": "HTML5 developer"
+			},{
+				"date": "2012",
+				"company": "DGFIP",
+				"url": "http://www.impots.gouv.fr",
+				"description": "Front-end developer & UX designer"
+			}, {
+				"date": "2011 H2",
+				"company": "Choregie",
+				"url": "http://www.choregie.fr",
+				"description": "Webservices developer"
+			},  {
+				"date": "2011 H1",
+				"company": "Backelite",
+				"url": "http://www.backelite.com/blog/references/eurostar/",
+				"description": "Java EE/Mobile developer  -  m.eurostar.com"
+			},  {
+				"date": "2010",
+				"company": "Canal+",
+				"url": "http://www.lesoffrescanal.fr/homepage-univers-canal-plus/carte-prepayee",
+				"description": "Java EE developer - Carte prépayée CANAL+ "
+			},  {
+				"date": "2008 - 2010",
+				"company": "Altavia",
+				"url": "http://www.altavia-group.com",
+				"description": "Java EE developer"
+			},  {
+				"date": "2007",
+				"company": "PSA",
+				"url": "http://www.psa-peugeot-citroen.com",
+				"description": "Java EE developer"
+			}
+		],
+		"social": [
+			{
+				"name": "twitter",
+				"url": "https://twitter.com/bilelz"
+			}, {
+				"name": "google +",
+				"url": "http://bilelz.fr/g+"
+			}
+		]
+	}
+}

@@ -1,0 +1,136 @@
+#skills{
+	position: relative;
+}
+
+#resumejson {
+	position: absolute;
+	color: white;
+	text-align: center;
+	top: -2px;
+right: -5px;
+	z-index: 1;
+	-webkit-transform: rotate(45deg);
+	   -moz-transform: rotate(45deg);
+	        transform: rotate(45deg);
+}
+
+#resumejson i {
+	text-shadow: 0 0 3px black;
+	font-size: 2em;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	     transform: rotate(-45deg);
+position: relative;
+display: block;
+}
+
+.triangleresume{
+	width: 0px;
+height: 0px;
+border-style: solid;
+border-width: 0 75px 75px 0;
+border-color: transparent #cccccc transparent transparent;
+position: absolute;
+	top: 0;
+	right: 0;
+}
+
+
+.skills{
+	content: '';
+	display: block;
+	//border-right: 5px solid #ddd;
+	//border-left: 95px solid orange;
+	background-color: #eee;
+	width: 100%;
+	
+	-webkit-transition: 3s;
+	-moz-transition: 3s;
+	-ms-transition: 3s;
+	-o-transition: 3s;
+	transition: 3s;
+	
+	background-size: 100%;
+	background-repeat: repeat-y;
+	
+	height: 10px;
+	margin-bottom: 15px;
+    
+	 
+}
+
+#skills .skills{
+	background-image: -webkit-linear-gradient(left, transparent);
+}
+
+.front{
+	background-image: -webkit-linear-gradient(left, lightblue 0%, lightgreen 80%, transparent 80%);
+	background-image: -moz-linear-gradient(left, lightblue 0%, lightgreen 80%, transparent 80%);
+	background-image: -o-linear-gradient(left, lightblue 0%, lightgreen 80%, transparent 80%);
+	background-image: -webkit-gradient(linear, 0 0, 100% 0, from(lightblue), color-stop(0.8, lightgreen), color-stop(0.8, transparent));
+	background-image: linear-gradient(left, lightblue 0%, lightgreen 80%, transparent 80%);
+}
+
+.js{	
+	background-image: -webkit-linear-gradient(left, lightblue 0%, lightgreen 75%, transparent 75%);
+	background-image: -moz-linear-gradient(left, lightblue 0%, lightgreen 75%, transparent 75%);
+	background-image: -o-linear-gradient(left, lightblue 0%, lightgreen 75%, transparent 75%);
+	background-image: -webkit-gradient(linear, 0 0, 100% 0, from(lightblue), color-stop(0.75, lightgreen), color-stop(0.75, transparent));
+	background-image: linear-gradient(left, lightblue 0%, lightgreen 75%, transparent 75%);
+}
+
+.css{
+	background-image: -webkit-linear-gradient(left, lightblue 0%, lightgreen 90%, transparent 90%);
+	background-image: -moz-linear-gradient(left, lightblue 0%, lightgreen 90%, transparent 90%);
+	background-image: -o-linear-gradient(left, lightblue 0%, lightgreen 90%, transparent 90%);
+	background-image: -webkit-gradient(linear, 0 0, 100% 0, from(lightblue), color-stop(0.9, lightgreen), color-stop(0.9, transparent));
+	background-image: linear-gradient(left, lightblue 0%, lightgreen 90%, transparent 90%);
+}
+
+.java{
+	background-image: -webkit-linear-gradient(left, lightblue 0%, lightgreen 65%, transparent 65%);
+	background-image: -moz-linear-gradient(left, lightblue 0%, lightgreen 65%, transparent 65%);
+	background-image: -o-linear-gradient(left, lightblue 0%, lightgreen 65%, transparent 65%);
+	background-image: -webkit-gradient(linear, 0 0, 100% 0, from(lightblue), color-stop(0.65, lightgreen), color-stop(0.65, transparent));
+	background-image: linear-gradient(left, lightblue 0%, lightgreen 65%, transparent 65%);
+}
+
+.stuff{
+	background-image: -webkit-linear-gradient(left, lightblue 0%, lightgreen 80%, salmon 100%);
+	background-image: -moz-linear-gradient(left, lightblue 0%, lightgreen 80%, salmon 100%);
+	background-image: -o-linear-gradient(left, lightblue 0%, lightgreen 80%, salmon 100%);
+	background-image: -webkit-gradient(linear, 0 0, 100% 0, from(lightblue), color-stop(0.8, lightgreen), to(salmon));
+	background-image: linear-gradient(left, lightblue 0%, lightgreen 80%, salmon 100%);
+}
+
+#work{
+	text-align: center;
+}
+
+#work .progression{
+	border: 10px solid orange;
+	border-color: orange orange orange white;
+	border-radius: 156px;
+	width: 64px;
+	height: 64px;
+	display: inline-block;
+	line-height: 64px;
+	text-align: center;
+	font-size: 2em;
+		
+	width: 84px;
+	height: 84px;
+	display: inline-block;
+	line-height: 64px;
+}
+
+#portfolio ul{
+	list-style: none;
+	text-align: center;
+}
+
+#portfolio ul li i {
+	font-size: 2em;
+	display: block;
+	vertical-align: middle;
+}

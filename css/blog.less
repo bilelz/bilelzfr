@@ -1,0 +1,31 @@
+.gradientFunc (@deg, @color1, @color2) { 
+  background-image: -webkit-linear-gradient(@deg, @color1, @color2);
+  background-image: -moz-linear-gradient(@deg, @color1, @color2);
+   background-image: linear-gradient(@deg, @color1, @color2);
+}
+
+
+
+div.blog a.link div.title{
+    background-color : rgba(0, 0,0, .5);
+     //.gradientFunc(45deg, rgba(0, 0,0, .5) 0%, rgba(254, 198, 6, .5) 100%);
+}
+
+div.blog a.link:hover div.title{
+     background-color : rgba(0, 0,0, 0);
+}
+
+div.blog a.link{
+     color: white;
+      text-shadow: 0px 1px 0px #000;
+}
+
+div.blog a.link:hover{
+     color: black;
+      text-shadow: 0px 1px 0px #fff;
+}
+
+div.blog a.link .contentSnippet{
+  .gradientFunc(135deg, rgba(254, 198, 6,.8) 0%, rgba(227, 90, 149,.8) 100%)
+}
+
