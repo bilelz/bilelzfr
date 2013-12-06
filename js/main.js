@@ -101,7 +101,7 @@ $(document).ready(function() {
 				
 				html = Mustache.render(resumetitleTmpl, json);
 				$("#resumetitle").html("").append(html);
-				
+				$(".mycontainer, nav").addClass("blur");
 				$('#resume').modal();
 				document.location.hash = "resume";
 			});
@@ -114,6 +114,7 @@ $(document).ready(function() {
 	});
 	
 	$('#resume').on('hide', function () {
+		$(".mycontainer, nav").removeClass("blur");
 	  /* remove hash # from url */		
 		if(window.history && window.history.pushState){
 			/* to really remove "#"  http://stackoverflow.com/a/5298684 */
