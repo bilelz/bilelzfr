@@ -1,0 +1,32 @@
+{{#entries}}
+
+	{{#newdiv}}
+		</div>
+		<div style="width: 320px; display: inline-block; vertical-align: top;" class="blog-row">
+	{{/newdiv}}
+
+	<div class="blog flipInX animated">
+		<a href="{{link}}" target="_blank" class="link"> <img src="{{img}}" alt="{{title}}"/>
+		<div class="title">
+
+			{{title}}
+		</div>
+		<div class="contentSnippet">
+			<span>{{{contentSnippet}}}</span>
+		</div> <!-- <small>
+		{{date}}
+		</small> --> </a>
+
+		<div class="tags">
+			{{#categories}}
+			<div>
+				<a href="http://blog.bilelz.fr/search/label/{{.}}" target="_blank"> #{{.}} </a>
+			</div>
+			{{/categories}}
+		</div>
+		<div class="blogcard">
+			<a href="http://blog.bilelz.fr" target="_blank"> blog</a>
+		</div>
+		<span class="triangle"></span>
+	</div>
+	{{/entries}}

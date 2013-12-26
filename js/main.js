@@ -15,30 +15,34 @@ $(document).ready(function() {
 	
 	var nbPerColumn = 2;
 	var nbPost = 6;
-	$.ajax({
-		url : document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num='+nbPost+'&callback=?&q=' + encodeURIComponent(rss),
-		dataType : 'json',
-		success : function(data) {
-
-			var tmpl = $("#blog-tmpl").html(), html = "";
-			var feed = data.responseData.feed;
-
-			//feed.entries[0].title = replaceURLWithHTMLLinks(feed.entries[0].title);
-			/* set id & only one thunbmail*/
-			
-			for(var i in feed.entries){
-				if(  i%nbPerColumn == 0){
-					feed.entries[i].newdiv = "true";
+	$.get('js/blog.mustache.html', function(template, textStatus, jqXhr) {
+                    
+        
+		$.ajax({
+			url : document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num='+nbPost+'&callback=?&q=' + encodeURIComponent(rss),
+			dataType : 'json',
+			success : function(data) {
+	
+				var tmpl = template, html = "";
+				var feed = data.responseData.feed;
+	
+				//feed.entries[0].title = replaceURLWithHTMLLinks(feed.entries[0].title);
+				/* set id & only one thunbmail*/
+				
+				for(var i in feed.entries){
+					if(  i%nbPerColumn == 0){
+						feed.entries[i].newdiv = "true";
+					}
+					//feed.entries[i].contentText = $.trim($(feed.entries[i].content).text()).replace(/\n\n/ig,"\n");
+					feed.entries[i].img = $(feed.entries[i].content).find("img:first").attr("src");
+					feed.entries[i].date = (new Date(feed.entries[i].publishedDate)).toLocaleDateString() + " " + (new Date(feed.entries[i].publishedDate)).toLocaleTimeString();
 				}
-				//feed.entries[i].contentText = $.trim($(feed.entries[i].content).text()).replace(/\n\n/ig,"\n");
-				feed.entries[i].img = $(feed.entries[i].content).find("img:first").attr("src");
-				feed.entries[i].date = (new Date(feed.entries[i].publishedDate)).toLocaleDateString() + " " + (new Date(feed.entries[i].publishedDate)).toLocaleTimeString();
+				
+				var html = Mustache.render(tmpl, feed);
+				$('#blogrss').html("").append(html);
+	
 			}
-			
-			var html = Mustache.render(tmpl, feed);
-			$('#blogrss').html("").append(html);
-
-		}
+		});
 	});
 	
 	// donate
@@ -88,19 +92,12 @@ $(document).ready(function() {
 	$('#resumejson').click(function (){		
 		
 		
-		$.get('js/resume.mustache', function(templates) {// chargement des templates html pour les indicateurs et le consignateur
-		
-			var template = $(templates);
-			var resumeTmpl = template.filter('#resume-tmpl').html();
-			var resumetitleTmpl = template.filter('#resumetitle-tmpl').html();
-			
-			
+		$.get('js/resume.mustache.html', function(resumeTmpl) {// chargement des templates html pour les indicateurs et le consignateur
+						
 			$.getJSON('js/resume.json', function(json){
 				var html = Mustache.render(resumeTmpl, json);
 				$("#resume .modal-body p").html("").append(html);
 				
-				html = Mustache.render(resumetitleTmpl, json);
-				$("#resumetitle").html("").append(html);
 				$(".mycontainer, nav").addClass("blur");
 				$('#resume').modal();
 				document.location.hash = "resume";
@@ -128,35 +125,26 @@ $(document).ready(function() {
 		$('#resumejson').click();
 	}
 
-	var map;
-	function initialize() {
-		var mapOptions = {
-			zoom : 17,
-			center : new google.maps.LatLng(48.858115, 2.294726),
-			mapTypeId : google.maps.MapTypeId.ROADMAP
-		};
-		map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-	}
-
-	google.maps.event.addDomListener(window, 'load', initialize);
-	
-	
-	var mapmedina;
-	function initializeMedina() {
-		var mapOptions = {
-			zoom : 10,
-			center : new google.maps.LatLng(24.460899,39.62019),
-			mapTypeId : google.maps.MapTypeId.ROADMAP
-		};
-		mapmedina = new google.maps.Map(document.getElementById('map-medina'), mapOptions);
-	}
-
-	google.maps.event.addDomListener(window, 'load', initializeMedina);
-	
 	
 });
 
-function replaceURLWithHTMLLinks(text) {
-	var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
-	return text.replace(exp, "<a href='$1' target='_blank'>$1</a>");
-}
+// G+
+(function() {
+				var po = document.createElement('script');
+				po.type = 'text/javascript';
+				po.async = true;
+				po.src = 'https://apis.google.com/js/plusone.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(po, s);
+			})();
+
+// twitter
+! function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (!d.getElementById(id)) {
+					js = d.createElement(s);
+					js.id = id;
+					js.src = "//platform.twitter.com/widgets.js";
+					fjs.parentNode.insertBefore(js, fjs);
+				}
+			}(document, "script", "twitter-wjs");

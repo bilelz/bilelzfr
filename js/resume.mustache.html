@@ -1,0 +1,74 @@
+				
+					{{#resume}}
+					
+					<ul>
+						<!--{{#social.0}}			
+							<li>			
+								<ul>
+									{{#social}}
+										<li>
+											<a href="{{url}}" target="_blank">{{name}}</a>
+										</li>								
+									{{/social}}
+								</ul>
+							</li>
+						{{/social.0}}-->
+						
+						{{#skills.0}}
+						<li>						
+							<h4>skills</h4>
+							<ul>
+								{{#skills}}
+									<li>
+										{{name}} - {{level}}
+									</li>								
+								{{/skills}}
+							</ul>
+							</li>
+						{{/skills.0}}
+						
+						{{#experience.0}}	
+						<li>					
+							<h4>experience</h4>
+							<table class="table table-hover table-condensed">
+								{{#experience}}
+									<tr>
+										<td style="white-space: nowrap"><small>{{date}}</small></td>
+										<td><a href="{{url}}" title="{{url}}" target="_blank">{{company}}</a></td>
+										<td><strong>{{description}}</strong></td>
+										
+									</tr>
+								{{/experience}}
+							</table>
+							<!-- <ul>
+								{{#experience}}
+									<li>{{date}}
+										<strong>{{description}}</strong> 	
+										<br/>									
+										@<a href="{{url}}" target="_blank">{{company}}</a>
+										
+									</li>								
+								{{/experience}}
+							</ul> -->
+							</li>
+						{{/experience.0}}
+						
+						{{#education.0}}	
+						<li>					
+							<h4>education</h4>
+							<ul>
+								{{#education}}
+									<li>
+										{{date}}
+										<strong>{{title}}</strong>									
+										@<a href="{{url}}" title="{{url}}" target="_blank">{{school}}</a>
+										
+									</li>								
+								{{/education}}
+							</ul>
+							</li>
+						{{/education.0}}
+					{{/resume}}
+						
+					</ul>
+						

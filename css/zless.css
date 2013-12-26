@@ -1,0 +1,67 @@
+div.blog a.link div.title {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+div.blog a.link:hover div.title {
+  background-color: rgba(0, 0, 0, 0);
+}
+div.blog a.link {
+  color: white;
+  text-shadow: 0px 1px 0px #000;
+}
+div.blog a.link:hover {
+  color: black;
+  text-shadow: 0px 1px 0px #fff;
+}
+div.blog a.link .contentSnippet {
+  background-image: -webkit-linear-gradient(135deg, rgba(254, 198, 6, 0.8) 0%, rgba(227, 90, 149, 0.8) 100%);
+  background-image: -moz-linear-gradient(135deg, rgba(254, 198, 6, 0.8) 0%, rgba(227, 90, 149, 0.8) 100%);
+  background-image: linear-gradient(135deg, rgba(254, 198, 6, 0.8) 0%, rgba(227, 90, 149, 0.8) 100%);
+}
+
+#skills.showAnimation .skills {
+  -webkit-animation: skills-animation 3s 1;
+  -moz-animation: skills-animation 3s 1;
+  -ms-animation: skills-animation 3s 1;
+  -o-animation: skills-animation 3s 1;
+  animation: skills-animation 3s 1;
+}
+@-webkit-keyframes skills-animation {
+  0% {
+    background-size: 0%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+@-moz-keyframes skills-animation {
+  0% {
+    background-size: 0%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+@-ms-keyframes skills-animation {
+  0% {
+    background-size: 0%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+@-o-keyframes skills-animation {
+  0% {
+    background-size: 0%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+@keyframes skills-animation {
+  0% {
+    background-size: 0%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}

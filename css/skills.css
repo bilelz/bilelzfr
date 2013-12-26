@@ -63,7 +63,7 @@ position: absolute;
 	background-image: -webkit-linear-gradient(left, transparent);
 }
 
-.front{
+.skills.front{
 	background-image: -webkit-linear-gradient(left, lightblue 0%, lightgreen 80%, transparent 80%);
 	background-image: -moz-linear-gradient(left, lightblue 0%, lightgreen 80%, transparent 80%);
 	background-image: -o-linear-gradient(left, lightblue 0%, lightgreen 80%, transparent 80%);
@@ -71,7 +71,7 @@ position: absolute;
 	background-image: linear-gradient(left, lightblue 0%, lightgreen 80%, transparent 80%);
 }
 
-.js{	
+.skills.js{	
 	background-image: -webkit-linear-gradient(left, lightblue 0%, lightgreen 75%, transparent 75%);
 	background-image: -moz-linear-gradient(left, lightblue 0%, lightgreen 75%, transparent 75%);
 	background-image: -o-linear-gradient(left, lightblue 0%, lightgreen 75%, transparent 75%);
@@ -79,7 +79,7 @@ position: absolute;
 	background-image: linear-gradient(left, lightblue 0%, lightgreen 75%, transparent 75%);
 }
 
-.css{
+.skills.css{
 	background-image: -webkit-linear-gradient(left, lightblue 0%, lightgreen 90%, transparent 90%);
 	background-image: -moz-linear-gradient(left, lightblue 0%, lightgreen 90%, transparent 90%);
 	background-image: -o-linear-gradient(left, lightblue 0%, lightgreen 90%, transparent 90%);
@@ -87,7 +87,7 @@ position: absolute;
 	background-image: linear-gradient(left, lightblue 0%, lightgreen 90%, transparent 90%);
 }
 
-.java{
+.skills.java{
 	background-image: -webkit-linear-gradient(left, lightblue 0%, lightgreen 65%, transparent 65%);
 	background-image: -moz-linear-gradient(left, lightblue 0%, lightgreen 65%, transparent 65%);
 	background-image: -o-linear-gradient(left, lightblue 0%, lightgreen 65%, transparent 65%);
@@ -95,7 +95,7 @@ position: absolute;
 	background-image: linear-gradient(left, lightblue 0%, lightgreen 65%, transparent 65%);
 }
 
-.stuff{
+.skills.stuff{
 	background-image: -webkit-linear-gradient(left, lightblue 0%, lightgreen 80%, salmon 100%);
 	background-image: -moz-linear-gradient(left, lightblue 0%, lightgreen 80%, salmon 100%);
 	background-image: -o-linear-gradient(left, lightblue 0%, lightgreen 80%, salmon 100%);
